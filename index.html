@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang='zh-CN' id="my-html">
+
+<head>
+  <meta charset="utf-8" />
+  <title>我在桥头等着你</title>
+  <style>
+    .wrapper {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ff1919 no-repeat center center;
+      background-image: url(./1.png);
+      background-origin: content-box;
+      background-clip: content-box;
+      background-size: cover;
+    }
+
+    .main {
+      position: absolute;
+      top: 0;
+      bottom: 90px;
+      left: 0;
+      right: 0;
+      background: no-repeat bottom center;
+      background-image: url(./background.png);
+      background-origin: content-box;
+      background-clip: content-box;
+      background-size: auto 100%;
+    }
+
+    .btn-wrapper {
+      background-color: #cd0b0b;
+      height: 90px;
+      line-height: 90px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+    }
+
+    .btn-wrapper>a {
+      flex: 0 0 25%;
+      text-align: center;
+      background: linear-gradient(#d61111, #b30404); 
+      background: linear-gradient(#e42424, #cd0b0b) #cd0b0b;
+      border: 1px solid #e53232;
+      border-bottom: none;
+      font-size: 36px;
+      font-weight: bold;
+      color: #fff;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    .btn-wrapper > a:not(:last-of-type) {
+        border-right-color: transparent;
+      } 
+    .btn-wrapper>a:hover,
+    .btn-wrapper>a:active {
+      background: linear-gradient(#c71111, #a70505);
+    }
+
+    .btn-wrapper>a:last-of-type:hover,
+    .btn-wrapper>a:last-of-type:active {
+      background: linear-gradient(#d42323, #be0b0b);
+    }
+
+    .btn-wrapper > a > img {
+        position: relative;
+        width: 42px;
+        top: 6px;
+        margin-right: 8px;
+      } 
+
+    @media screen and (max-width: 736px) {
+      .wrapper {
+        background-image: url(./1.png);
+        padding-bottom: 48px;
+      }
+
+      .main {
+        bottom: 48px;
+        background: no-repeat bottom right;
+        background-image: url(./background.png);
+        background-size: contain;
+      }
+
+      .btn-wrapper {
+        height: 48px;
+        line-height: 48px;
+      }
+
+      .btn-wrapper>a {
+        border-width: 1px;
+        font-size: 14px;
+        background-clip: border-box;
+      }
+
+      .btn-wrapper>a:not(:last-of-type) {
+        border-right-color: transparent;
+      }
+
+      .btn-wrapper > a > img {
+          width: 18px;
+          top: 4px;
+          margin-right: 2px;
+        } 
+      .btn-wrapper>a:last-of-type>img {
+        top: 3px;
+      }
+    }
+
+    @media screen and (max-width: 2560px) and (min-aspect-ratio: 24/9) {
+      .main {
+        background-size: cover;
+      }
+    }
+
+    @media screen and (min-width: 736px) and (max-aspect-ratio: 1/1) {
+      .main {
+        background-size: auto 75%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="main"></div>
+    <div class="btn-wrapper">
+      <a class="apply" href="https://news.qiaotou.fun">
+        桥头发布
+      </a>
+      <a class="wish" href="https://mrt.qiaotou.fun">
+        桥头地铁
+      </a>
+      <a class="wish" href="https://wcnl8ixl5xm4.feishu.cn/share/base/form/shrcnLhCDGEFXBm6nzsIKyo20Lg">
+        整活建议
+      </a>
+      <a class="wish" href="https://wcnl8ixl5xm4.feishu.cn/share/base/form/shrcnaoIS2MjNG1izauGoyif5PB">
+        加入桥头
+      </a>
+    </div>
+  </div>
+
+</body>
+
+</html>
